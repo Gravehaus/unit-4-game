@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+
+    <title>RPG</title>
+</head>
+
+<!-- Content here -->
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <div class="container">
+
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2"></div>
+            <h3 id="game-message"></h3>
+            <div class="col col-lg-2"></div>
+
+        </div>
+
+        <div class="header">
+            <p>Fight for your Life.</p>
+            <h2>Choose your Character</h2>
+        </div>
+
+        <div class="interface">
+            <a href='#' onclick="gameManager.setGameStart('Booker-dewitt')">
+                <img src="./assets/images/heroes/booker-dewitt.jpg" alt="booker-dewitt"> <!--BOOKER DEWITT-->
+                <div>
+                    <h3>Booker Dewitt</h3>
+                    <p>“One thing I've learned: if you don't draw first, you don't get to draw at all. ― Booker DeWitt,
+                        to Elizabeth”</p>
+                </div>
+            </a>
+            <a href='#' onclick="gameManager.setGameStart('Ellie-joel')">
+                <img src="./assets/images/heroes/ellie-joel.png" alt="ellie-joel">
+                <div>
+                    <h3>Ellie & Joel</h3>
+                    <p>"After all we've been through...Everything that I've done, it can't be for nothing.
+                            — Ellie"</p>
+                </div>
+            </a>
+            <a href='#' onclick="gameManager.setGameStart('Heather-mason')">
+                <img src="./assets/images/heroes/heather-mason.png" alt="heather-mason">
+                <div>
+                    <h3>Heather Mason</h3>
+                    <p>“C'mon. How powerful can a god from a dump like this be? I'm sure it'll be no big deal.</p>
+                </div>
+            </a>
+            <a href='#' onclick="gameManager.setGameStart('Issac-clarke')">
+                <img src="./assets/images/heroes/issac-clarke.png" alt="issac-clarke">
+                <div>
+                    <h3>Isaac Clarke</h3>
+                    <p>“"Stick around. I’m full of bad ideas."</p>
+                </div>
+            </a>
+            <a href='#' onclick="gameManager.setGameStart('James-sunderland')">
+                <img src="./assets/images/heroes/james-sunderland.jpg" alt="james-sunderland">
+                <div>
+                    <h3>James Sunderland</h3>
+                    <p>"This town is full of monsters! How can you just sit there and eat pizza?!"</p>
+                </div>
+            </a>
+            <a href='#' onclick="gameManager.setGameStart('Leon-kennedy')">
+                <img src="./assets/images/heroes/leon-kennedy.jpg" alt="leon-kennedy">
+                <div>
+                    <h3>Leon Kennedy</h3>
+                    <p>"Used to be a cop myself, only for a day, though."</p>
+                </div>
+            </a>
+
+        </div>
+
+<!------------------------------------>
+
+        <div class="actions">
+
+
+        </div>
+
+        <div class="arena">
+
+
+        </div>
+
+        <div class="enemy">
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---------------------------------
+
+        <h3>Opponent's Health <span id="opponent-health"></span></h3>
+        <h3>Your Health <span id="player-health"></span></h3>
+        <button id="attack-button" onclick="attack()">Hit em'!</button>
+
+        <button id="restart-button" hidden="true" onclick="restart()">Restart Game</button>
+
+        <h3 id="game-message"></h3>
+
+
+        <div class="card-deck"> <--OPPONENTS DECK--
+                <div class="card">
+                  <img src="./assets/images/villans/big-daddy.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row"> <!--THIS IS THE BATTLE ROW--
+                <div class="col-sm">
+                  One of three columns
+                </div>
+                <div class="col-sm">
+                  One of three columns
+                </div>
+                <div class="col-sm">
+                  One of three columns
+                </div>
+              </div>
+
+              <div class="card-deck"> <--PLAYER'S DECK--
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+        <--              JAVASCRIPT CODE                                                -->
+        <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/enemy.js"></script>
+        <script src="assets/javascript/player.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
+    </div>
+</body>
+
+</html>
