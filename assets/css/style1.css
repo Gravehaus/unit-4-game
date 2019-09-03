@@ -1,5 +1,5 @@
 .container{
-    width: 50%;
+    
     text-align: center;
     color: white;
 }
@@ -24,7 +24,7 @@ body{
     font-size: 24px;
     color: rgb(51, 19, 19);
     background-color: grey;
-    border: 10px;
+    border-width: 10px;
 }
 
 
