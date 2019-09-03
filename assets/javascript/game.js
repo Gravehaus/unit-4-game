@@ -29,6 +29,7 @@ this.setPreFight();
         case "Leon-kennedy":
         player = new Player(classType, 150, 100, 100, 150, 50); //classType: health, mana, strength, agility, speed
         break;
+        
     
         }
         let getInterface = document.querySelector(".interface"); //WHY WONT IMAGE POP UP?!

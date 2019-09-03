@@ -49,7 +49,7 @@ let playerMoves = {
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
 
-    }
+    
 
         //initiate attacks
         if(getPlayerSpeed >= getEnemySpeed) {
@@ -84,7 +84,7 @@ else {
 }
     }
     
-    
+}
 
 }
 
