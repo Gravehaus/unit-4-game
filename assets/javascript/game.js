@@ -18,7 +18,7 @@ this.setPreFight();
         player = new Player(classType, 100, 50, 75, 150, 150); //classType: health, mana, strength, agility, speed
         break;
 
-        case "Isaac-clarke":
+        case "Issac-clarke":
         player = new Player(classType, 150, 150, 100, 75, 50); //classType: health, mana, strength, agility, speed
         break;
 
