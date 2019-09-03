@@ -91,19 +91,18 @@ this.setPreFight();
         break;
         
     }
-    getHeader.innerHTML = '<p>Choose your move.</p>';
+    getHeader.innerHTML = '<p>Task: Choose your move.</p>';
     getActions.innerHTML = '<a href = "#" class= "btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
     
     getEnemy.innerHTML = '<img src="assets/images/villans/' + enemy.enemyType.toLowerCase() + '.png" alt="' + 
     enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + 
-    '</h3><p class="health-enemy">Health: ' + enemy.health + 
+    '</h3><p class="health-enemy">Health: ' +enemy.health + 
     '</p><p>Bullets: ' + enemy.mana + 
     '</p><p>Strength: ' + enemy.strength + 
     '</p><p>Agility: ' + enemy.agility + 
     '</p><p>Speed: ' + enemy.speed + 
     '</p></div>';
 
-  
    }
 
    
