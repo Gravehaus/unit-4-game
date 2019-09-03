@@ -56,14 +56,14 @@ this.setPreFight();
     let getEnemy = document.querySelector(".enemy");
     
     //CREATE ENEMY//
-    let enemy00 = new Enemy("Big Daddy", 250, 50, 200, 0, 25);
+    let enemy00 = new Enemy("Big Daddy", 250, 50, 200, 10, 25);
     let enemy01 = new Enemy("Clicker", 100, 50, 100, 150, 150);
     let enemy02 = new Enemy("Necromorph", 150, 75, 100, 150, 100);
-    let enemy03 = new Enemy("Nemesis", 250, 150, 150, 0, 50);
-    let enemy04 = new Enemy("Pyramid Head", 250, 50, 150, 0, 75);
+    let enemy03 = new Enemy("Nemesis", 250, 150, 150, 10, 50);
+    let enemy04 = new Enemy("Pyramid Head", 250, 50, 150, 10, 75);
     let enemy05 = new Enemy("Robbie the Rabbit", 100, 50, 100, 150, 150);
 
-    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
+    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5));
 
     switch(chooseRandomEnemy) {
         case 0:
