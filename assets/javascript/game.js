@@ -91,7 +91,7 @@ this.setPreFight();
         break;
         
     }
-    getHeader.innerHTML = '<p>Task: Choose your move.</p>';
+    getHeader.innerHTML = '<p>Choose your move.</p>';
     getActions.innerHTML = '<a href = "#" class= "btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
     
     getEnemy.innerHTML = '<img src="assets/images/villans/' + enemy.enemyType.toLowerCase() + '.png" alt="' + 
@@ -103,6 +103,7 @@ this.setPreFight();
     '</p><p>Speed: ' + enemy.speed + 
     '</p></div>';
 
+  
    }
 
    
