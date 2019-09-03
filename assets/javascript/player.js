@@ -49,42 +49,44 @@ let playerMoves = {
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
 
-    
+
 
         //initiate attacks
-        if(getPlayerSpeed >= getEnemySpeed) {
-        let playerAttackValues = playerAttack();
-let totalDamage = playerAttackValues[0] * playerAttackValues[1];
-enemy.health = enemy.health - totalDamage;
-alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times."); //change alert later
+        if (getPlayerSpeed >= getEnemySpeed) {
+            let playerAttackValues = playerAttack();
+            let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+            enemy.health = enemy.health - totalDamage;
+            alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times."); //change alert later
 
-if (enemy.health <= 0) {
-    alert("You win!");
-    getPlayerHealth.innerHTML = 'Health: ' + player.health;
-    getEnemyHealth.innerHTML = 'Health: 0';
-}
+            if (enemy.health <= 0) {
+                alert("You win!");
+                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getEnemyHealth.innerHTML = 'Health: 0';
+            }
 
-else {
-    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
-    //enemy attacks
-    let enemyAttackValues = enemyAttack();
-    let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
-    player.health = player.health - totalDamage;
-    alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times."); //change alert later
+            else {
+                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                //enemy attacks
 
-    if (player.health <= 0) {
-        alert("You Died.!");
-        getPlayerHealth.innerHTML = 'Health: 0';
-        getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
 
-    } else {
-        getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                let enemyAttackValues = enemyAttack();
+                let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+                player.health = player.health - totalDamage;
+                alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times."); //change alert later
+
+                if (player.health <= 0) {
+                    alert("You Died.");
+                    getPlayerHealth.innerHTML = 'Health: 0';
+                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+
+                } else {
+                    getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                }
+
+            }
+        }
+
     }
-
-}
-    }
-    
-}
 
 }
 
