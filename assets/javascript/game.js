@@ -67,27 +67,27 @@ this.setPreFight();
 
     switch(chooseRandomEnemy) {
         case 0:
-        enemy = enemy00;
+        enemy = enemy00;  //Big Daddy doesn't load
         break;
 
         case 1:
-        enemy = enemy01;
+        enemy = enemy01; //Clicker DOES load
         break;
 
         case 2:
-        enemy = enemy02;
+        enemy = enemy02; //Necromorph DOES load
         break;
     
         case 3:
-        enemy = enemy03;
+        enemy = enemy03; //Nemesis DOES load AND DOES ATTACK
         break;
 
         case 4:
-        enemy = enemy04;
+        enemy = enemy04; //Pyramid Head DOES NOT load
         break;
         
         case 5:
-        enemy = enemy05;
+        enemy = enemy05; //Robbie DOES NOT LOAD AND CANNOT ATTACK
         break;
         
     }
