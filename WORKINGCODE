@@ -1,6 +1,3 @@
-THIS IS THE WORKING CODE
-
-
 <!doctype html>
 <html lang="en">
 
@@ -22,6 +19,7 @@ THIS IS THE WORKING CODE
 
 <body>
     <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    
     <div class="container">
 
         <div class="row justify-content-md-center">
@@ -36,7 +34,12 @@ THIS IS THE WORKING CODE
             <h2>Choose your Character</h2>
         </div>
 
+        
+
         <div class="interface">
+
+
+            
             <a href='#' onclick="gameManager.setGameStart('Booker-dewitt')">
                 <img src="./assets/images/heroes/booker-dewitt.png" alt="booker-dewitt"> 
                 <div>
@@ -46,9 +49,6 @@ THIS IS THE WORKING CODE
                 </div>
             </a>
 
-
-
-            
             <a href='#' onclick="gameManager.setGameStart('Ellie-joel')">
                 <img src="./assets/images/heroes/ellie-joel.png" alt="ellie-joel">
                 <div>
@@ -57,6 +57,8 @@ THIS IS THE WORKING CODE
                             — Ellie"</p>
                 </div>
             </a>
+
+        
             <a href='#' onclick="gameManager.setGameStart('Heather-mason')">
                 <img src="./assets/images/heroes/heather-mason.png" alt="heather-mason">
                 <div>

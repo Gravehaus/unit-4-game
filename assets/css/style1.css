@@ -1,3 +1,8 @@
+.container{
+    width: 50%;
+    text-align: center;
+}
+
 body{
     background-image:url("../images/silent-hills.jpg");
     background-color: rgb(68, 68, 68);
@@ -14,6 +19,10 @@ h2, p{
     text-align: center;
 }
 
+h3{
+    color:white;
+}
+
 img{
    width: 200px;
    border: 1px;
@@ -24,15 +33,12 @@ img{
 a{
     color: black; 
     
+    
 }
 
 a:hover {
     color:white;
   }
 
-.interface{
-    align-content: center;
-    text-align: center;
-}
 
 

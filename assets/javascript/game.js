@@ -32,7 +32,7 @@ this.setPreFight();
         
     
         }
-        let getInterface = document.querySelector(".interface"); //WHY WONT IMAGE POP UP?!
+        let getInterface = document.querySelector(".interface"); 
         getInterface.innerHTML = '<img src="assets/images/heroes/' + classType.toLowerCase() + '.png" class="img-avatar"><div><h3>'  + classType + 
         '</h3><p class="health-player">Health: ' + player.health +  
         '</p><p>Bullets: ' + player.mana +  
@@ -91,7 +91,7 @@ this.setPreFight();
         break;
         
     }
-    getHeader.innerHTML = '<p>Task: Choose your move.</p>';
+    getHeader.innerHTML = '<p>Choose your move.</p>';
     getActions.innerHTML = '<a href = "#" class= "btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
     
     getEnemy.innerHTML = '<img src="assets/images/villans/' + enemy.enemyType.toLowerCase() + '.png" alt="' + 
