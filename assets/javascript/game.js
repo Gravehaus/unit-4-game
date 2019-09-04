@@ -3,7 +3,7 @@ setGameStart: function(classType){
     this.resetPlayer(classType);
     this.setPreFight();
     
-    $('audio#promise')[0].play() //This is supposed to play on the the title screen not the "choose your opponent"
+    $('audio#promise')[0].play() //This is supposed to play on the the title screen not the "choose your opponent through battle screen"
     
    
 },
