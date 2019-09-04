@@ -2,6 +2,7 @@ let gameManager = {
 setGameStart: function(classType){
     this.resetPlayer(classType);
     this.setPreFight();
+    
 },
    resetPlayer: function(classType){
         switch(classType){
@@ -42,10 +43,13 @@ setGameStart: function(classType){
    setPreFight: function(){
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
+        let audio = new Audio('assets/sound/promise.mp3');
+        audio.play();
+        
         // let getArena = document.querySelector(".arena");
         getHeader.innerHTML = '<p>Task: Find an Opponent! </p>';
-        getActions.innerHTML = '<a href = "#" class= "button btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
-        getArena.style.visibility = "visible";
+        getActions.innerHTML = '<a href = "#" class= "btn btn-secondary btn-lg btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
+        //getArena.style.visibility = "visible";
    },
 
    setFight: function(){
@@ -90,7 +94,7 @@ setGameStart: function(classType){
         
     }
     getHeader.innerHTML = '<p>Choose your move.</p>';
-    getActions.innerHTML = '<a href = "#" class= "btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
+    getActions.innerHTML = '<a href = "#" class= "btn btn-secondary btn-lg btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
     
     getEnemy.innerHTML = '<img src="assets/images/villans/' + enemy.enemyType.toLowerCase() + '.png" alt="' + 
     enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + 
