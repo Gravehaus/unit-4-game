@@ -63,7 +63,7 @@ let playerMoves = {
             alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times."); //change alert later
 
             if (enemy.health <= 0) {
-                alert("You win!");
+                alert("You win! Refresh screen to begin new game!");
                 getPlayerHealth.innerHTML = 'Health: ' + player.health;
                 getEnemyHealth.innerHTML = 'Health: 0';
             }

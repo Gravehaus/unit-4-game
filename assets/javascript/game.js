@@ -1,8 +1,8 @@
 let gameManager = {
 setGameStart: function(classType){
-this.resetPlayer(classType);
-this.setPreFight();
-    },
+    this.resetPlayer(classType);
+    this.setPreFight();
+},
    resetPlayer: function(classType){
         switch(classType){
 
@@ -28,11 +28,9 @@ this.setPreFight();
 
         case "Leon-kennedy":
         player = new Player(classType, 150, 100, 100, 150, 50); //classType: health, mana, strength, agility, speed
-        break;
-        
-    
-        }
-        let getInterface = document.querySelector(".interface"); 
+        break;    
+    }
+        let getInterface = document.querySelector(".interface"); //Cpy this line and then paster it with changes to "getInterface -> getPlayer/ add additional like that empties the interface." 
         getInterface.innerHTML = '<img src="assets/images/heroes/' + classType.toLowerCase() + '.png" class="img-avatar"><div><h3>'  + classType + 
         '</h3><p class="health-player">Health: ' + player.health +  
         '</p><p>Bullets: ' + player.mana +  
@@ -44,9 +42,9 @@ this.setPreFight();
    setPreFight: function(){
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
-        let getArena = document.querySelector(".arena");
+        // let getArena = document.querySelector(".arena");
         getHeader.innerHTML = '<p>Task: Find an Opponent! </p>';
-        getActions.innerHTML = '<a href = "#" class= "btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
+        getActions.innerHTML = '<a href = "#" class= "button btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
         getArena.style.visibility = "visible";
    },
 
@@ -56,38 +54,38 @@ this.setPreFight();
     let getEnemy = document.querySelector(".enemy");
     
     //CREATE ENEMY//
-    let enemy00 = new Enemy("Big Daddy", 250, 50, 200, 10, 25);
+    let enemy00 = new Enemy("BigDaddy", 250, 50, 200, 10, 25);
     let enemy01 = new Enemy("Clicker", 100, 50, 100, 150, 150);
     let enemy02 = new Enemy("Necromorph", 150, 75, 100, 150, 100);
     let enemy03 = new Enemy("Nemesis", 250, 150, 150, 10, 50);
-    let enemy04 = new Enemy("Pyramid Head", 250, 50, 150, 10, 75);
-    let enemy05 = new Enemy("Robbie the Rabbit", 100, 50, 100, 150, 150);
+    let enemy04 = new Enemy("PyramidHead", 250, 50, 150, 10, 75);
+    let enemy05 = new Enemy("RobbietheRabbit", 100, 50, 100, 150, 150);
 
-    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5));
+    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5)); //COMPUTER RANDOMLY PICKS ENEMY
 
     switch(chooseRandomEnemy) {
         case 0:
-        enemy = enemy00;  //Big Daddy doesn't load
+        enemy = enemy00;  
         break;
 
         case 1:
-        enemy = enemy01; //Clicker DOES load
+        enemy = enemy01; 
         break;
 
         case 2:
-        enemy = enemy02; //Necromorph DOES load
+        enemy = enemy02; 
         break;
     
         case 3:
-        enemy = enemy03; //Nemesis DOES load AND DOES ATTACK
+        enemy = enemy03; 
         break;
 
         case 4:
-        enemy = enemy04; //Pyramid Head DOES NOT load
+        enemy = enemy04; 
         break;
         
         case 5:
-        enemy = enemy05; //Robbie DOES NOT LOAD AND CANNOT ATTACK
+        enemy = enemy05; 
         break;
         
     }

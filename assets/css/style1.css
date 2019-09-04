@@ -42,6 +42,13 @@ a{
     
 }
 
+p{
+    background-color: black;
+    background-blend-mode: color-burn;
+    opacity: .5;
+    
+}
+
 a:hover {
     color:white;
   }
