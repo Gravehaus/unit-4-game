@@ -74,7 +74,7 @@ setGameStart: function(classType){
     let enemy02 = new Enemy("Necromorph", 149, 74, 99, 149, 99);
     let enemy03 = new Enemy("Nemesis", 249, 149, 149, 9, 49);
     let enemy04 = new Enemy("PyramidHead", 249, 49, 149, 9, 74);
-    let enemy05 = new Enemy("RobbietheRabbit", 99, 50, 99, 149, 149);
+    let enemy05 = new Enemy("RobbietheRabbit", 99, 49, 99, 149, 149);
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6)); //COMPUTER RANDOMLY PICKS ENEMY
 
