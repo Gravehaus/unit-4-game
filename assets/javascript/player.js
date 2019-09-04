@@ -71,6 +71,7 @@ let playerMoves = {
             else {
                 getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
                 
+                
                 //enemy attacks
 
 

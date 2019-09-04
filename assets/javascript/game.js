@@ -70,7 +70,7 @@ setGameStart: function(classType){
     
     //CREATE ENEMY//
     let enemy00 = new Enemy("BigDaddy", 250, 50, 200, 10, 25);
-    let enemy01 = new Enemy("Clicker", 100, 50, 100, 150, 150);
+    let enemy01 = new Enemy("Clicker", 80, 50, 100, 150, 150); ///only one without stats showing up. i.e. broken...
     let enemy02 = new Enemy("Necromorph", 150, 75, 100, 150, 100);
     let enemy03 = new Enemy("Nemesis", 250, 150, 150, 10, 50);
     let enemy04 = new Enemy("PyramidHead", 250, 50, 150, 10, 75);
@@ -79,6 +79,7 @@ setGameStart: function(classType){
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5)); //COMPUTER RANDOMLY PICKS ENEMY
 
     switch(chooseRandomEnemy) {
+
         case 0:
         enemy = enemy00;  
         break;
@@ -104,7 +105,7 @@ setGameStart: function(classType){
         break;
         
     }
-    getHeader.innerHTML = '<p>Choose your move.</p>';
+    getHeader.innerHTML = '<h2>Choose your move.</h2>';
     getActions.innerHTML = '<a href = "#" class= "btn btn-secondary btn-lg btn-preFight" onclick="playerMoves.calcAttack()">Attack!</a>';
     
     getEnemy.innerHTML = '<img src="assets/images/villans/' + enemy.enemyType.toLowerCase() + '.png" alt="' + 
