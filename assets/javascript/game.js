@@ -57,10 +57,10 @@ setGameStart: function(classType){
         let getActions = document.querySelector(".actions");
         
         
-        // let getArena = document.querySelector(".arena");
+       
         getHeader.innerHTML = '<p>Task: Find an Opponent! </p>';
         getActions.innerHTML = '<a href = "#" class= "btn btn-secondary btn-lg btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
-        getArena.style.visibility = "visible";
+        
    },
 
    setFight: function(){
@@ -78,7 +78,7 @@ setGameStart: function(classType){
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6)); //COMPUTER RANDOMLY PICKS ENEMY
 
-    ///SOME OF THESE SWITCH CASES DONT RUN WHNE PAIRED WITH A SPECIFIC CHARACTER AND I DONT KNOW WHY...!
+    ///SOME OF THESE SWITCH CASES DONT RUN WHNE PAIRED WITH A SPECIFIC CHARACTER AND I DONT KNOW WHY...! Maybe the heroes have to be classed by numbers too?
 
     switch(chooseRandomEnemy) {
 
@@ -87,7 +87,7 @@ setGameStart: function(classType){
         break;
 
         case 1:
-        enemy = enemy01; //Clicker
+        enemy = enemy01; //Clicker- wont run sometimes
         break;
 
         case 2:
