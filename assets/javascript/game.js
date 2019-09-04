@@ -16,19 +16,19 @@ setGameStart: function(classType){
         switch(classType){
 
         case "Booker-dewitt":
-        player = new Player(classType, 200, 100, 100, 75, 75); //classType: health, mana, strength, agility, speed
+        player = new Player(classType, 200, 100, 100, 70, 70); //classType: health, mana, strength, agility, speed
         break;
             
         case "Ellie-joel":
-        player = new Player(classType, 250, 50, 75, 120, 120); //classType: health, mana, strength, agility, speed
+        player = new Player(classType, 250, 50, 70, 120, 120); //classType: health, mana, strength, agility, speed
         break;
 
         case "Heather-mason":
-        player = new Player(classType, 100, 50, 75, 150, 150); //classType: health, mana, strength, agility, speed
+        player = new Player(classType, 100, 50, 70, 150, 150); //classType: health, mana, strength, agility, speed
         break;
 
         case "Issac-clarke":
-        player = new Player(classType, 150, 150, 100, 75, 50); //classType: health, mana, strength, agility, speed
+        player = new Player(classType, 150, 150, 100, 70, 50); //classType: health, mana, strength, agility, speed
         break;
 
         case "James-sunderland":
