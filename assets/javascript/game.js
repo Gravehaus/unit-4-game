@@ -3,8 +3,16 @@ setGameStart: function(classType){
     this.resetPlayer(classType);
     this.setPreFight();
     
+    $('audio#promise')[0].play()
+    
+   
 },
+
+
+
+
    resetPlayer: function(classType){
+
         switch(classType){
 
         case "Booker-dewitt":
@@ -39,12 +47,15 @@ setGameStart: function(classType){
         '</p> <p>Agility: ' + player.agility +  
         '</p> <p>Speed: ' + player.speed +  
         '</p></div>'; 
+
+        
+    
+
    },
    setPreFight: function(){
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
-        let audio = new Audio('assets/sound/promise.mp3');
-        audio.play();
+        
         
         // let getArena = document.querySelector(".arena");
         getHeader.innerHTML = '<p>Task: Find an Opponent! </p>';

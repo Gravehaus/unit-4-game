@@ -30,16 +30,20 @@ body{
 
 
 img{
-   width: 200px;
+   width: 250px;
+   height: 250px;
+   overflow: auto;
    border: 1px;
    border-color: white;
    
 }
 
+.card-body{
+    opacity: 25%;
+}
+
 a{
-    color: black; 
-    
-    
+    color: black;
 }
 
 
