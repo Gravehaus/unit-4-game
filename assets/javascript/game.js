@@ -69,12 +69,12 @@ setGameStart: function(classType){
     let getEnemy = document.querySelector(".enemy");
     
     //CREATE ENEMY//
-    let enemy00 = new Enemy("BigDaddy", 245, 45, 195, 5, 20);
-    let enemy01 = new Enemy("Clicker", 75, 45, 95, 115, 115); ///only one without stats showing up. i.e. broken...
-    let enemy02 = new Enemy("Necromorph", 145, 74, 95, 145, 95);
-    let enemy03 = new Enemy("Nemesis", 245, 145, 145, 5, 45);
-    let enemy04 = new Enemy("PyramidHead", 245, 45, 145, 5, 70);
-    let enemy05 = new Enemy("RobbietheRabbit", 95, 45, 95, 145, 145);
+    let enemy00 = new Enemy("BigDaddy", 240, 40, 190, 10, 20);
+    let enemy01 = new Enemy("Clicker", 70, 40, 90, 110, 110); ///only one without stats showing up. i.e. broken...
+    let enemy02 = new Enemy("Necromorph", 140, 70, 90, 140, 90);
+    let enemy03 = new Enemy("Nemesis", 240, 140, 150, 10, 40);
+    let enemy04 = new Enemy("PyramidHead", 240, 40, 140, 10, 70);
+    let enemy05 = new Enemy("RobbietheRabbit", 90, 40, 90, 140, 140);
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6)); //COMPUTER RANDOMLY PICKS ENEMY
 
