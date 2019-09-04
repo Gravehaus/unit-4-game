@@ -3,7 +3,7 @@ setGameStart: function(classType){
     this.resetPlayer(classType);
     this.setPreFight();
     
-    $('audio#promise')[0].play()
+    $('audio#promise')[0].play() //This is supposed to play on the the title screen not the "choose your opponent"
     
    
 },
@@ -60,7 +60,7 @@ setGameStart: function(classType){
         // let getArena = document.querySelector(".arena");
         getHeader.innerHTML = '<p>Task: Find an Opponent! </p>';
         getActions.innerHTML = '<a href = "#" class= "btn btn-secondary btn-lg btn-preFight" onclick="gameManager.setFight()">Search for an Opponent!</a>';
-        //getArena.style.visibility = "visible";
+        getArena.style.visibility = "visible";
    },
 
    setFight: function(){
@@ -83,27 +83,27 @@ setGameStart: function(classType){
     switch(chooseRandomEnemy) {
 
         case 0:
-        enemy = enemy00;  
+        enemy = enemy00;  //Big Daddy
         break;
 
         case 1:
-        enemy = enemy01; 
+        enemy = enemy01; //Clicker
         break;
 
         case 2:
-        enemy = enemy02; 
+        enemy = enemy02; //Necromorph
         break;
     
         case 3:
-        enemy = enemy03; 
+        enemy = enemy03; //Nemesis
         break;
 
         case 4:
-        enemy = enemy04; 
+        enemy = enemy04; //Pyramid
         break;
         
         case 5:
-        enemy = enemy05; 
+        enemy = enemy05; //Robbie The Rabbit. //This wont run when paired with certain characters.
         break;
         
     }
