@@ -76,7 +76,7 @@ setGameStart: function(classType){
     let enemy04 = new Enemy("PyramidHead", 240, 40, 140, 10, 70);
     let enemy05 = new Enemy("RobbietheRabbit", 90, 40, 90, 140, 140);
 
-    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6)); //COMPUTER RANDOMLY PICKS ENEMY
+    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5)); //COMPUTER RANDOMLY PICKS ENEMY
 
     ///SOME OF THESE SWITCH CASES DONT RUN WHNE PAIRED WITH A SPECIFIC CHARACTER AND I DONT KNOW WHY...! Maybe the heroes have to be classed by numbers too?
 
