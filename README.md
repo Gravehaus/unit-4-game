@@ -7,6 +7,8 @@ The goal of the game is to attack the opponent to get their HP down to zero. Whe
 
 Errors I ran into:
 
-Some characters when paired with certain enemeies wont run the program which is odd even though I have no bugs popping up in console.log.
+Some characters when paired with certain enemeies wont run the program which is odd even though I have no bugs popping up in console.log. I had altered enemy values so they did not match hero values, thinking that would alleviated that error in match ups but that didn't work either.
 
 Also when changing screens from chooing your hero to finding the opponent some design aspects are lost. I wanted the enemies vs. heroes to be side by side but I could not figure out how to get that design to work, unfortunately.
+
+Hope yall enjoy the song too. It's called "Promise" by Akira Yamaoka.
