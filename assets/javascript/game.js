@@ -78,6 +78,8 @@ setGameStart: function(classType){
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5)); //COMPUTER RANDOMLY PICKS ENEMY
 
+    ///SOME OF THESE SWITCH CASES DONT RUN WHNE PAIRED WITH A SPECIFIC CHARACTER AND I DONT KNOW WHY...!
+
     switch(chooseRandomEnemy) {
 
         case 0:
