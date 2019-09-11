@@ -78,9 +78,10 @@ a:hover {
     color:white;
   }
 
-#alert{
-    background-color: black;
-    color: white;
+
+
+.mynav{
+    text-align: center;
 }
 
 
